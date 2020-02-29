@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 	html, body{
         background: #f2f3f4;
         height: 100%;
-        box-sizing: border-box;
+        // box-sizing: border-box;
 	}
 	div{
 		box-sizing:border-box;
