@@ -34,6 +34,9 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         box-sizing: border-box;
 	}
+	div{
+		box-sizing:border-box;
+	}
 	ol, ul, li {
 		list-style: none;
 	}
