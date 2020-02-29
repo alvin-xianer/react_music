@@ -1,22 +1,14 @@
 import React from 'react';
-
+import { GlobalStyle } from  './style';
+import { renderRoutes } from 'react-router-config';
+import routes from './routes/index.js';
+import { HashRouter } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <GlobalStyle></GlobalStyle>
+      { renderRoutes (routes) }
+    </HashRouter>
   );
 }
 
