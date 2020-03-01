@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from '../../componentsUI/slider/index';
 import RecommendList from '../../componentsUI/List/index';
+import Scroll from '../../componentsUI/Scroll/index';
+import { Content } from './style';
 function Recommend (props) {
   const bannerList = [1,2,3,4].map (item => {
     return { imageUrl: "http://p1.music.126.net/uNgTGEASDOuSV5_XdE2VQw==/109951164753628582.jpg?imageView&quality=89" }
@@ -14,10 +16,14 @@ function Recommend (props) {
     }
   }) 
   return (
-    <div>
-      <Slider bannerList={ bannerList }></Slider>
-      <RecommendList recommendList={ recommendList }></RecommendList>
-    </div>
+    <Content>
+      <Scroll className="list">
+        <div>
+          <Slider bannerList={ bannerList }></Slider>
+          <RecommendList recommendList={ recommendList }></RecommendList>
+        </div>
+      </Scroll>
+    </Content>
   )
 }
 
